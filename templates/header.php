@@ -9,7 +9,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="<?= get_template_directory_uri(); ?>/dist/images/logo.png">
+      <a href="<?php bloginfo('url') ?>">
+        <img src="<?= get_template_directory_uri(); ?>/dist/images/logo.png">
+      </a>
     </div>
 
     <nav class="collapse navbar-collapse navbar-right" role="navigation">
