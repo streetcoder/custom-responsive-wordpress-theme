@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="<?php bloginfo('url') ?>">
-        <img src="<?= get_template_directory_uri(); ?>/dist/images/logo.png">
+        <img src="<?= get_template_directory_uri(); ?>/dist/images/logo.png" alt="logo" />
       </a>
     </div>
 
