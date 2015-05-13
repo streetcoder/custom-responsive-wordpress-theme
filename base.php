@@ -21,19 +21,18 @@ use Roots\Sage\Wrapper;
 
       <!--<div class="content row">-->
 
-
         <!-- .container -->
         <div class="container">
-
-          <main class="main" role="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
 
           <?php if (Config\display_sidebar()) : ?>
             <aside class="sidebar" role="complementary">
               <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
           <?php endif; ?>
+
+          <main class="main" role="main">
+            <?php include Wrapper\template_path(); ?>
+          </main><!-- /.main -->
 
         </div><!-- /.container -->
 

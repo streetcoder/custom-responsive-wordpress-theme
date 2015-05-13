@@ -113,7 +113,7 @@ function nav_menu_args($args = '') {
   }
 
   if (!$args['depth']) {
-    $nav_menu_args['depth'] = 2;
+    $nav_menu_args['depth'] = 3;
   }
 
   return array_merge($args, $nav_menu_args);
