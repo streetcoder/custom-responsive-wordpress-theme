@@ -1,3 +1,3 @@
 #ListGuru
 ### A custom responsive wordpress theme
-### It is used root.io framework
+### root.io framework is used to developed this theme
