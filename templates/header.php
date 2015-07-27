@@ -1,25 +1,31 @@
 <?php use Roots\Sage\Nav\NavWalker; ?>
 
-<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
+<header class="banner" role="banner">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="<?php bloginfo('url') ?>">
-        <img src="<?= get_template_directory_uri(); ?>/dist/images/logo.png" alt="logo" />
-      </a>
-    </div>
+    <nav class="navbar navbar-default">
 
-    <nav class="collapse navbar-collapse navbar-right" role="navigation">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new NavWalker(), 'menu_class' => 'nav navbar-nav']);
-      endif;
-      ?>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<?php bloginfo('url') ?>">List Guru</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <?php
+          if (has_nav_menu('primary_navigation')) :
+            wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new NavWalker(), 'menu_class' => 'nav navbar-nav navbar-right']);
+          endif;
+          ?>
+        </div><!--/.nav-collapse -->
+      </div>
     </nav>
   </div>
 </header>
+
+
+

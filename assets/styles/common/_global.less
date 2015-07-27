@@ -1,116 +1,238 @@
+/* ==========================================================================
+   Author's Name: Shimul
+   email: proshimul@yahoo.com
+   web: streetcoder.net
+   ========================================================================== */
+
+/*  fontface*/
+@font-face {
+  font-family: 'GothamCondensed-Bold';
+  src: url('../fonts/GothamCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamCondensed-Bold.otf')  format('opentype'),
+  url('../fonts/GothamCondensed-Bold.woff') format('woff'),
+  url('../fonts/GothamCondensed-Bold.ttf')  format('truetype'),
+  url('../fonts/GothamCondensed-Bold.svg#GothamCondensed-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamCondensed-Book';
+  src: url('../fonts/GothamCondensed-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamCondensed-Book.otf')  format('opentype'),
+  url('../fonts/GothamCondensed-Book.woff') format('woff'),
+  url('../fonts/GothamCondensed-Book.ttf')  format('truetype'),
+  url('../fonts/GothamCondensed-Book.svg#GothamCondensed-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * *
+             Common
+* * * * * * * * * * * * * * * * * */
+
 body {
-  padding-top: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'GothamCondensed-Book';
 }
 
 main{
   padding-left: 0 !important;
-}
-
-.main , .sidebar{
-  padding: 30px 0;
+  padding-right: 0 !important;
 }
 
 
-p {
-  font: 13px/21px "Trebuchet MS",Arial,Helvetica,sans-serif;
+/*  custom button */
+.btn-guru{
+  background-color: #ef5821;
+  background-image: linear-gradient(to bottom, #ef5821 0px, #ef5821 100%);
+  background-repeat: repeat-x;
+  border-color: #ef5821;
+  color: #fff;
 }
 
+h2{
+  font-family: 'GothamCondensed-Bold';
+}
 
-// Responsiveness
+h2.big-text{
+  text-transform: uppercase;
+}
 
+/*  jquery ui */
 
+/*.ui-state-active .ui-icon, .ui-state-focus .ui-icon, .ui-state-hover .ui-icon {
+  background-image: url("../images/ui-icons_454545_256x240.png");
+}*/
+.ui-state-default .ui-icon {
+  background-image: url("../images/ui-icons_777777_256x240.png");
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  background: #ffffff !important;
+  border: 1px solid #ebebeb;
+  color: #0d1f2a;
+  font-family: 'GothamCondensed-Bold';
+  font-size: 16px;
+}
+
+.ui-accordion .ui-accordion-content {
+  color: #0d1f2a;
+  font-family: 'GothamCondensed-Book';
+  font-size: 16px;
+}
+
+.ui-accordion .ui-accordion-header {
+  color: #0d1f2a;
+  font-family: 'GothamCondensed-Bold';
+  font-size: 16px;
+}
+
+/* Customize container */
 @media (min-width: 768px) {
-  .social ul{
-    float: right;
+
+  aside{
+    padding-left: 40px !important;
+  }
+
+  .container {
+    max-width: 1110px;
+  }
+
+  .big-text{
+    font-size: 52px;
+  }
+
+  h3.big-text-third{
+    font-size: 36px;
+  }
+
+  .how-works {
+    margin-top: 40px;
+  }
+
+  h2.big-second-text{
+    font-size: 48px;
+  }
+  .how-works-2{
+    margin-top: 40px;
+    padding-left: 20px
+  }
+  .how-works h3.big-text-third{
+    color: #ffffff;
+    font-size: 44px;
+  }
+  .how-works-2-right{
+    padding-top: 100px;
+    text-align: right;
+  }
+
+  .how-works-2-right h2{
+    margin-right: 25px;
+  }
+
+  .how-works-2-right .envelop{
+    margin-right: 50px;
+  }
+
+  .how-works-2-right h3{
+    margin: 0;
+    font-size: 44px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  .how-works{
+    min-height: 875px;
+  }
+
+  .promo-left h3 ,
+  .promo-right h3{
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 36px;
+  }
+
+  .promo-right{
+    padding-bottom: 10px;
   }
 
 }
 
-@media (max-width: 767px) {
 
-  .social ul{
-    float: left;
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
   }
-  .social img{
-    width: 60%;
-  }
-  .footer-wrap .widget-footer{
-    text-align: center;
-  }
+}
 
-  .punchline_text_home{
-    margin-top: 0px;
-    margin-bottom: 15px;
-  }
-  .check-rate-on-slider{
-    width: 97%;
-    position: absolute;
-    top: 2.5%;
-    right: 2%;
-  }
-  .master-slider-parent,
-  .master-slider-parent * {
-    height: @slider-height-big-mobile;
-    max-height: @slider-height-big-mobile;
-    min-height: @slider-height-big-mobile;
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:3px 5px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
   }
 
-  .ms-slide-layers{
-    display: none !important;
+  .how-works{
+    padding-top: 40px;
+  }
+  .how-works-2{
+    margin-top: 20px;
+  }
+  .how-works-2-right{
+    padding-top: 80px;
+    text-align: right;
+  }
+
+  .how-works-2-right h3{
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 textarea
+  {
+    width: 100%;
   }
 
 }
 
-@media all and (max-width: 992px) and (min-width: 768px) {
-
-  .check-rate-on-slider{
-    width: 50%;
-    position: absolute;
-    top: 10%;
-    right: 2%;
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+    border-radius:4px;
   }
 
-}
-
-@media (min-width: 992px) {
-
-  .newsletter small {
-    font-size: 16px;
+  .how-works-2-right{
+    padding-top: 120px;
+    text-align: right;
   }
 
-  .check-rate-on-slider{
-    width: 28%;
-    position: absolute;
-    top: 13%;
-    right: 7%;
+  .how-works-2-right h3{
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 0;
+    word-spacing: 0;
   }
 
-  .master-slider-parent,
-  .master-slider-parent * {
-    height: @slider-height-big-device;
-    max-height: @slider-height-big-device;
-    min-height: @slider-height-big-device;
+  .promo-left h3,
+  .promo-right h3{
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 24px;
   }
 
-
-}
-
-@media (max-width: 992px) {
-
-  .social ul li{
-    float: left;
+  .promo-right{
+    padding-bottom: 22px;
   }
-
-  .call-to-action-text{
-    padding: 15px 0px;
-  }
-
-  .newsletter small {
-    font-size: 12px;
-  }
-
-}
-
-@media (min-width: 1200px) {
 
 }

@@ -1,47 +1,22 @@
-<footer class="footer-wrap" role="contentinfo">
-
-  <div class="footer-top-bg"></div>
-
-  <div class="footer-widget">
-
+<footer>
     <div class="container">
-
-      <div class="row">
-
-        <?php dynamic_sidebar('sidebar-footer'); ?>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="footer-mid-bg">
-    <!--<div class="scrollup">asdasd</div>-->
-      <a class="scrollup" href="#"></a>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-8">
-          <h2>PRHL - Premier Holding Corporation</h2>
-          <p>Copyright © 2013 PRHLCorp.com. All rights reserved.
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a></p>
+        <div class="footer-top">
+            <h3>Need my help with words? <a class="lets-talk">let's talk</a></h3>
         </div>
-        <div class="col-md-4">
-          <p>1382 Valencia Avenue Suite F, Tustin, CA 92780</p>
-          <p>Phone: (949) 260-8070</p>
-          <p>E-mail: info@PRHLcorp.com</p>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <a href="#" class="footer-menu">Terms &amp; Conditions</a> |
+                    <a href="#" class="footer-menu">Privacy</a> |
+                    <a href="#" class="footer-menu">Contact</a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <p>&copy;2015 ListGuru</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <p><i class="fa fa-twitter"></i> &nbsp;&nbsp;<i class="fa fa-envelope-o"></i></p>
+                </div>
+            </div>
         </div>
-
-      </div>
-
     </div>
-  </div>
-
-
-
 </footer>

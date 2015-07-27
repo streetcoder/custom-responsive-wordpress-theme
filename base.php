@@ -16,7 +16,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php get_template_part('templates/page', 'header'); ?>
+
     <div class="wrap" role="document">
 
       <!--<div class="content row">-->
@@ -24,15 +24,17 @@ use Roots\Sage\Wrapper;
         <!-- .container -->
         <div class="container">
 
+          <main class="main" role="main">
+            <?php include Wrapper\template_path(); ?>
+          </main><!-- /.main -->
+
           <?php if (Config\display_sidebar()) : ?>
             <aside class="sidebar" role="complementary">
               <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
           <?php endif; ?>
 
-          <main class="main" role="main">
-            <?php include Wrapper\template_path(); ?>
-          </main><!-- /.main -->
+
 
         </div><!-- /.container -->
 
@@ -40,6 +42,7 @@ use Roots\Sage\Wrapper;
 
     </div><!-- /.wrap -->
     <?php
+      do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>

@@ -10,11 +10,19 @@
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
     "bootstrap": "3.3.4",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "jqueri-ui": "~1.11.4"
   },
   "overrides": {
     "modernizr": {
       "main": "./modernizr.js"
+    },
+    "jqueri-ui": {
+      "main": [
+        "./themes/base/jquery-ui.css",
+        "./themes/base/images/*",
+        "./jquery-ui.js"
+      ]
     },
     "bootstrap": {
       "main": [
