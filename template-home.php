@@ -19,10 +19,9 @@
         <div class="col-md-7 col-sm-7">
             <h2 class="big-text">Build your email list!</h2>
             <h3 class="big-text-third">Grow your customers, relationships and sales with our email marketing campaigns.</h3>
-            <!--<div class="lets-talk"></div>-->
+
             <p>
                 <button type="button" class="btn btn-guru btn-lg btn-responsive">Get Started!</button>
-                <!--<button type="button" class="btn btn-primary btn-lg btn-responsive">Default button</button>-->
                 <button type="button" class="btn btn-default btn-lg btn-responsive">Learn more about List Guru</button>
             </p>
         </div>
