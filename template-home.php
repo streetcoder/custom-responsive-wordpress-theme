@@ -73,7 +73,7 @@
     </div>
 </div>
 
-<div class="pricing-table">
+<div class="pricing-table" id="get-started">
     <h2 class="big-text">Our Packages</h2>
     <div class="row">
         <div class="col-md-4 col-sm-4">
