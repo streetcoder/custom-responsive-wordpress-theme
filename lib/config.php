@@ -13,6 +13,7 @@ add_theme_support('soil-nice-search');      // Enable nice search from Soil
 //add_theme_support('soil-jquery-cdn');       // Enable to load jQuery from the Google CDN
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 
+
 /**
  * Configuration values
  */
@@ -54,8 +55,11 @@ function display_sidebar() {
       [
         'is_404',
         'is_front_page',
-        ['is_page_template', 'template-custom.php'],
-        ['is_page', 'contact-us']
+        ['is_page_template', 'template-home.php'],
+        ['is_page'],
+        ['is_post'],
+        ['is_singular'],
+        ['is_post_type_archive']
       ]
     );
 

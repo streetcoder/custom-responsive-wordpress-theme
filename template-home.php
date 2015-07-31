@@ -74,7 +74,7 @@
 </div>
 
 <div class="pricing-table">
-    <h2 class="big-text">Pur Packages</h2>
+    <h2 class="big-text">Our Packages</h2>
     <div class="row">
         <div class="col-md-4 col-sm-4">
 
@@ -91,7 +91,7 @@
                     <li><i class="fa fa-desktop"></i> Custom designed landing page</li>
                     <li><i class="fa fa-pencil-square-o"></i> 1 professionally copy written emails</li>
                 </ul>
-                <button type="button" class="btn btn-pricing btn-block btn-responsive">Get Started!</button>
+                <a href="#" type="button" class="btn btn-pricing btn-block btn-responsive">Get Started!</a>
             </div>
         </div>
 
@@ -108,7 +108,7 @@
                     <li><i class="fa fa-desktop"></i> Custom designed landing page</li>
                     <li><i class="fa fa-pencil-square-o"></i> 3 professionally copy written emails</li>
                 </ul>
-                <button type="button" class="btn btn-pricing-featured btn-block btn-responsive">Get Started!</button>
+                <a href="#" type="button" class="btn btn-pricing-featured btn-block btn-responsive">Get Started!</a>
             </div>
         </div>
 
@@ -125,7 +125,7 @@
                     <li><i class="fa fa-desktop"></i> Custom designed landing page</li>
                     <li><i class="fa fa-pencil-square-o"></i> 7 professionally copy written emails</li>
                 </ul>
-                <button type="button" class="btn btn-pricing btn-block btn-responsive">Get Started!</button>
+                <a href="#" type="button" class="btn btn-pricing btn-block btn-responsive">Get Started!</a>
             </div>
         </div>
     </div>

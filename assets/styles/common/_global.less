@@ -42,6 +42,11 @@ body {
 main{
   padding-left: 0 !important;
   padding-right: 0 !important;
+  min-height: 449px !important;
+}
+
+.navbar-brand {
+  padding-left: 0;
 }
 
 
@@ -62,11 +67,16 @@ h2.big-text{
   text-transform: uppercase;
 }
 
+a {
+  color: #ef5821;
+}
+
+a:hover {
+  color: #ef5821;
+}
+
 /*  jquery ui */
 
-/*.ui-state-active .ui-icon, .ui-state-focus .ui-icon, .ui-state-hover .ui-icon {
-  background-image: url("../images/ui-icons_454545_256x240.png");
-}*/
 .ui-state-default .ui-icon {
   background-image: url("../images/ui-icons_777777_256x240.png");
 }
@@ -89,6 +99,122 @@ h2.big-text{
   font-family: 'GothamCondensed-Bold';
   font-size: 16px;
 }
+
+/*
+  woocommerce
+*/
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #ef5821;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.woocommerce ul.products li.product .price {
+  color: #ef5821;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #ef5821;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background-color: #ef5821;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.woocommerce .woocommerce-breadcrumb a {
+  color: #ef5821;
+}
+
+.woocommerce .woocommerce-message {
+  border-top-color: #ef5821;
+}
+
+.woocommerce .woocommerce-message::before {
+  color: #ef5821;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  background-color: #ef5821;
+  color: #ffffff;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  background-color: #ef5821;
+  color: #ffffff;
+}
+.shop_table a{
+  color: #ef5821;
+}
+
+.woocommerce .woocommerce-info {
+  border-top-color: #ef5821;
+}
+.woocommerce .woocommerce-info::before {
+  color: #ef5821;
+}
+
+.woocommerce .woocommerce-info a {
+  color: #ef5821;
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  padding: 4px 4px 6px 4px;
+}
+
+.woocommerce div.product div.images img {
+  padding: 20px;
+  border: 1px solid #ebebeb;
+}
+
+.woocommerce #content .product{
+  margin-top: 30px;
+}
+
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  display: inline-block;
+  padding: 10px;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+  display: inline-block;
+  padding: 10px;
+}
+
 
 /* Customize container */
 @media (min-width: 768px) {
@@ -166,19 +292,37 @@ h2.big-text{
     width: 85%;
   }
 
-}
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
+  .woocommerce #content{
+    /*padding-left: 15px;*/
+    padding-right: 10px;
   }
+
+  .woocommerce #content div.product div.images,
+  .woocommerce div.product div.images,
+  .woocommerce-page #content div.product div.images,
+  .woocommerce-page div.product div.images {
+    width: 35%;
+  }
+
+  .woocommerce #content div.product div.summary,
+  .woocommerce div.product div.summary,
+  .woocommerce-page #content div.product div.summary,
+  .woocommerce-page div.product div.summary {
+    width: 61%;
+    padding-right: 5px;
+  }
+
+  .woocommerce .cart-collaterals .cart_totals,
+  .woocommerce-page .cart-collaterals .cart_totals {
+    width: 30%;
+    padding-right: 10px;
+  }
+
 }
+
 
 @media (max-width: 768px) {
+
   .btn-responsive {
     padding:3px 5px;
     font-size:80%;
@@ -209,14 +353,23 @@ h2.big-text{
     width: 100%;
   }
 
+  .woocommerce #content{
+    /*padding-left: 5px;*/
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+
   .btn-responsive {
     padding:4px 9px;
     font-size:90%;
     line-height: 1.2;
     border-radius:4px;
+  }
+
+  .how-works{
+    padding-top: 15px;
   }
 
   .how-works-2-right{
