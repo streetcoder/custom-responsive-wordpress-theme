@@ -63,12 +63,12 @@ var revManifest = path.dist + 'assets.json';
 // ```
 var cssTasks = function(filename) {
   return lazypipe()
-    .pipe(function() {
-      return $.if(!enabled.failStyleTask, $.plumber());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.init());
-    })
+      .pipe(function() {
+        return $.if(!enabled.failStyleTask, $.plumber());
+      })
+      .pipe(function() {
+        return $.if(enabled.maps, $.sourcemaps.init());
+      })
       .pipe(function() {
         return $.if('*.less', $.less());
       })
@@ -88,12 +88,12 @@ var cssTasks = function(filename) {
         ]
       })
       .pipe($.minifyCss)
-    .pipe(function() {
-      return $.if(enabled.rev, $.rev());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.write('.'));
-    })();
+      .pipe(function() {
+        return $.if(enabled.rev, $.rev());
+      })
+      .pipe(function() {
+        return $.if(enabled.maps, $.sourcemaps.write('.'));
+      })();
 };
 
 // ### JS processing pipeline
@@ -105,17 +105,17 @@ var cssTasks = function(filename) {
 // ```
 var jsTasks = function(filename) {
   return lazypipe()
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.init());
-    })
-    .pipe($.concat, filename)
-    .pipe($.uglify)
-    .pipe(function() {
-      return $.if(enabled.rev, $.rev());
-    })
-    .pipe(function() {
-      return $.if(enabled.maps, $.sourcemaps.write('.'));
-    })();
+      .pipe(function() {
+        return $.if(enabled.maps, $.sourcemaps.init());
+      })
+      .pipe($.concat, filename)
+      .pipe($.uglify)
+      .pipe(function() {
+        return $.if(enabled.rev, $.rev());
+      })
+      .pipe(function() {
+        return $.if(enabled.maps, $.sourcemaps.write('.'));
+      })();
 };
 
 // ### Write to rev manifest
@@ -123,15 +123,15 @@ var jsTasks = function(filename) {
 // See https://github.com/sindresorhus/gulp-rev
 var writeToManifest = function(directory) {
   return lazypipe()
-    .pipe(gulp.dest, path.dist + directory)
-    .pipe(function() {
-      return $.if('**/*.{js,css}', browserSync.reload({stream:true}));
-    })
-    .pipe($.rev.manifest, revManifest, {
-      base: path.dist,
-      merge: true
-    })
-    .pipe(gulp.dest, path.dist)();
+      .pipe(gulp.dest, path.dist + directory)
+      .pipe(function() {
+        return $.if('**/*.{js,css}', browserSync.reload({stream:true}));
+      })
+      .pipe($.rev.manifest, revManifest, {
+        base: path.dist,
+        merge: true
+      })
+      .pipe(gulp.dest, path.dist)();
 };
 
 // ## Gulp tasks
@@ -152,10 +152,10 @@ gulp.task('styles', ['wiredep'], function() {
       });
     }
     merged.add(gulp.src(dep.globs, {base: 'styles'})
-      .pipe(cssTasksInstance));
+        .pipe(cssTasksInstance));
   });
   return merged
-    .pipe(writeToManifest('styles'));
+      .pipe(writeToManifest('styles'));
 });
 
 // ### Scripts
@@ -165,12 +165,12 @@ gulp.task('scripts', ['jshint'], function() {
   var merged = merge();
   manifest.forEachDependency('js', function(dep) {
     merged.add(
-      gulp.src(dep.globs, {base: 'scripts'})
-        .pipe(jsTasks(dep.name))
+        gulp.src(dep.globs, {base: 'scripts'})
+            .pipe(jsTasks(dep.name))
     );
   });
   return merged
-    .pipe(writeToManifest('scripts'));
+      .pipe(writeToManifest('scripts'));
 });
 
 // ### Fonts
@@ -178,20 +178,20 @@ gulp.task('scripts', ['jshint'], function() {
 // structure. See: https://github.com/armed/gulp-flatten
 gulp.task('fonts', function() {
   return gulp.src(globs.fonts)
-    .pipe($.flatten())
-    .pipe(gulp.dest(path.dist + 'fonts'));
+      .pipe($.flatten())
+      .pipe(gulp.dest(path.dist + 'fonts'));
 });
 
 // ### Images
 // `gulp images` - Run lossless compression on all the images.
 gulp.task('images', function() {
   return gulp.src(globs.images)
-    .pipe($.imagemin({
-      progressive: true,
-      interlaced: true,
-      svgoPlugins: [{removeUnknownsAndDefaults: false}]
-    }))
-    .pipe(gulp.dest(path.dist + 'images'));
+      .pipe($.imagemin({
+        progressive: true,
+        interlaced: true,
+        svgoPlugins: [{removeUnknownsAndDefaults: false}]
+      }))
+      .pipe(gulp.dest(path.dist + 'images'));
 });
 
 // ### JSHint
@@ -200,9 +200,9 @@ gulp.task('jshint', function() {
   return gulp.src([
     'bower.json', 'gulpfile.js'
   ].concat(project.js))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.jshint.reporter('fail'));
+      .pipe($.jshint())
+      .pipe($.jshint.reporter('jshint-stylish'))
+      .pipe($.jshint.reporter('fail'));
 });
 
 // ### Clean
@@ -236,9 +236,9 @@ gulp.task('watch', function() {
 // Generally you should be running `gulp` instead of `gulp build`.
 gulp.task('build', function(callback) {
   runSequence('styles',
-              'scripts',
-              ['fonts', 'images'],
-              callback);
+      'scripts',
+      ['fonts', 'images'],
+      callback);
 });
 
 // ### Wiredep
@@ -247,11 +247,11 @@ gulp.task('build', function(callback) {
 gulp.task('wiredep', function() {
   var wiredep = require('wiredep').stream;
   return gulp.src(project.css)
-    .pipe(wiredep())
-    .pipe($.changed(path.source + 'styles', {
-      hasChanged: $.changed.compareSha1Digest
-    }))
-    .pipe(gulp.dest(path.source + 'styles'));
+      .pipe(wiredep())
+      .pipe($.changed(path.source + 'styles', {
+        hasChanged: $.changed.compareSha1Digest
+      }))
+      .pipe(gulp.dest(path.source + 'styles'));
 });
 
 // ### Gulp
