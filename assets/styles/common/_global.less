@@ -35,18 +35,32 @@
 
 body {
   padding-top: 20px;
-  /*padding-bottom: 20px;*/
   font-family: 'GothamCondensed-Book';
 }
 
 main{
   padding-left: 0 !important;
   padding-right: 0 !important;
-  min-height: 449px !important;
+  min-height: 451px !important;
 }
 
 .navbar-brand {
   padding-left: 0;
+}
+
+.page-header {
+  margin-top: 0;
+  border-bottom: 1px solid #ef5821;
+  padding-bottom: 0;
+}
+
+.page-header h2.big-text{
+  margin: 0;
+  font-size: 36px;
+}
+
+div.amazingslider-box-1 :nth-child(3) {
+  visibility: hidden;
 }
 
 
@@ -85,19 +99,21 @@ a:hover {
   border: 1px solid #ebebeb;
   color: #0d1f2a;
   font-family: 'GothamCondensed-Bold';
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .ui-accordion .ui-accordion-content {
   color: #0d1f2a;
   font-family: 'GothamCondensed-Book';
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: .8px;
+  word-spacing: 1px;
 }
 
 .ui-accordion .ui-accordion-header {
   color: #0d1f2a;
   font-family: 'GothamCondensed-Bold';
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /*
@@ -129,16 +145,16 @@ a:hover {
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
   background-color: #ef5821;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
 .woocommerce input.button {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .woocommerce .woocommerce-breadcrumb {
@@ -201,19 +217,30 @@ a:hover {
   border: 1px solid #ebebeb;
 }
 
+.woocommerce table.shop_table {
+  border-radius: 0px;
+}
+
 .woocommerce #content .product{
   margin-top: 30px;
 }
 
+.woocommerce .cart_totals .table{
+  margin-bottom: 0;
+}
 
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
-  display: inline-block;
   padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
-  display: inline-block;
   padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
+
+
 
 
 /* Customize container */

@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-top">
-        <h3>Need help with building your email list?" <!--<a class="lets-talk">let's talk</a>--></h3>
+        <h3>Need help with building your email list? <a class="lets-talk">let's talk</a></h3>
     </div>
     <div class="footer-bottom">
         <div class="container">

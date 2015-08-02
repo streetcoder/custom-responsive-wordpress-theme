@@ -31,7 +31,14 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
+
 function wc_empty_cart_redirect_url() {
   return bloginfo('url')."#get-started";
 }
 add_filter( 'woocommerce_return_to_shop_redirect', 'wc_empty_cart_redirect_url' );
+
+add_filter ('add_to_cart_redirect', 'redirect_to_checkout');
+
+function redirect_to_checkout() {
+  return WC()->cart->get_checkout_url();
+}

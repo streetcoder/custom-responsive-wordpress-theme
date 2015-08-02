@@ -193,12 +193,8 @@
 <div class="wave"></div>
 
 <div class="past-project">
-    <h2 class="big-text">Past Project</h2>
-    <div class="row">
-        <div class="col-md-offset-2 col-md-10">
-            <img src="<?= get_template_directory_uri(); ?>/dist/images/pas-project.png" alt="past-project" class="img-responsive" />
-        </div>
-    </div>
+    <h2 class="big-text">Past Projects</h2>
+    <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
 </div>
 
 <div class="triangle"></div>
