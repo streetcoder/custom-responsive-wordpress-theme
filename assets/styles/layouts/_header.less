@@ -10,11 +10,6 @@
   box-shadow: none;
 }
 
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
-}
-
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
   background-image: none;
@@ -26,10 +21,9 @@
 }
 
 .navbar-nav > li > a {
-  padding: 6px 8px;
   font-family: 'GothamCondensed-Bold';
   font-size: 22px;
-  margin-right: 10px;
+  border: transparent 3px solid;
 }
 
 /* navigation active hover */
@@ -69,6 +63,11 @@
   border-color: transparent;
 }
 
+
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  padding-left: 25px;
+}
 
 /* * * * * * * * * * * * * * * * * *
            end navigation

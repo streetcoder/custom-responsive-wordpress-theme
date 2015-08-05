@@ -34,7 +34,7 @@
 * * * * * * * * * * * * * * * * * */
 
 body {
-  padding-top: 20px;
+  padding-top: 80px;
   font-family: 'GothamCondensed-Book';
 }
 
@@ -42,10 +42,6 @@ main{
   padding-left: 0 !important;
   padding-right: 0 !important;
   min-height: 451px !important;
-}
-
-.navbar-brand {
-  padding-left: 0;
 }
 
 .page-header {
@@ -246,6 +242,13 @@ a:hover {
 /* Customize container */
 @media (min-width: 768px) {
 
+  .navbar-default {
+    padding: 10px 0 5px 0;
+  }
+  .navbar-nav > li > a {
+    padding: 6px 8px;
+    margin-right: 10px;
+  }
   aside{
     padding-left: 40px !important;
   }
@@ -349,6 +352,17 @@ a:hover {
 
 @media (max-width: 768px) {
 
+  .navbar-default {
+    padding: 8px 0 1px 0;
+  }
+  .navbar-nav > li > a {
+    padding: 6px 8px;
+    margin-right: 10px;
+  }
+  .navbar-toggle {
+    margin-top: 4px;
+  }
+
   .btn-responsive {
     padding:3px 5px;
     font-size:80%;
@@ -392,7 +406,13 @@ a:hover {
     line-height: 1.2;
     border-radius:4px;
   }
-
+  .navbar-nav{
+    margin-top: 5px;
+  }
+  .navbar-nav > li > a {
+    padding: 4px;
+    margin-right: 2px;
+  }
   .how-works{
     padding-top: 15px;
   }

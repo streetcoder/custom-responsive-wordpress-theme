@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="how-works">
+<div id="works" class="how-works">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
 
@@ -73,12 +73,12 @@
     </div>
 </div>
 
-<div class="pricing-table" id="get-started">
+<div class="pricing-table" id="packages">
     <h2 class="big-text">Our Packages</h2>
     <?php echo do_shortcode('[easy-pricing-table id="40"]'); ?>
 </div>
 
-<div id="ourpackage" class="faq">
+<div id="faq" class="faq">
     <h2 class="big-text">FAQ</h2>
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
@@ -139,14 +139,14 @@
 
 <div class="wave"></div>
 
-<div class="past-project">
+<div id="projects" class="past-project">
     <h2 class="big-text">Past Projects</h2>
     <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
 </div>
 
 <div class="triangle"></div>
 
-<div id="contactus" class="contact-us">
+<div id="contact" class="contact-us">
     <h2 class="big-text">Contact Us</h2>
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
