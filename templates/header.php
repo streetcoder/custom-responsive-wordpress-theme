@@ -2,7 +2,7 @@
 
 <header class="banner" role="banner">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="scroll-nav" class="navbar navbar-default navbar-fixed-top">
 
       <div class="container">
         <div class="navbar-header">
@@ -23,11 +23,6 @@
             <li><a href="#projects">Past Projects</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <?php
-          /*if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new NavWalker(), 'menu_class' => 'nav navbar-nav navbar-right']);
-          endif;*/
-          ?>
         </div><!--/.nav-collapse -->
       </div>
     </nav>

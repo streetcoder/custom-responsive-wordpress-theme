@@ -78,13 +78,34 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-})(jQuery); // Fully reference jQuery after this point.
 
+  // jquery UI accordion
 
-jQuery(function() {
-  jQuery( "#accordion" ).accordion({
+  $( "#accordion" ).accordion({
     active: false,
     collapsible: true
   });
-});
+
+
+  $("#scroll-nav li a[href^='#']").on('click', function(e) {
+    // prevent default anchor click behavior
+    e.preventDefault();
+
+    // store hash
+    var hash = this.hash;
+
+    // animate
+    $('html, body').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 800, function(){
+
+      // when done, add hash to url
+      // (default click behaviour)
+      window.location.hash = hash;
+    }).die() ;
+
+  });
+
+
+})(jQuery); // Fully reference jQuery after this point.
 

@@ -10,7 +10,7 @@
  * Template Name: Home Template
  */
 ?>
-<div id ="getstarted" class="get-started">
+<div id="getstarted" class="get-started">
     <div class="row">
 
         <div class="col-md-offset-2 col-md-3 col-sm-offset-1 col-sm-4">
@@ -27,8 +27,8 @@
         </div>
     </div>
 </div>
-
-<div id="works" class="how-works">
+<div id="works">&nbsp;</div>
+<div class="how-works">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
 
@@ -137,9 +137,9 @@
     </div>
 </div>
 
-<div class="wave"></div>
+<div id="projects" class="wave"></div>
 
-<div id="projects" class="past-project">
+<div class="past-project">
     <h2 class="big-text">Past Projects</h2>
     <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
 </div>
