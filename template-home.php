@@ -21,8 +21,8 @@
             <h3 class="big-text-third">Grow your customers, relationships and sales with our email marketing campaigns.</h3>
 
             <p>
-                <button type="button" class="btn btn-guru btn-lg btn-responsive">Get Started!</button>
-                <button type="button" class="btn btn-default btn-lg btn-responsive">Learn more about List Guru</button>
+                <a href="#packages" type="button" class="btn btn-guru btn-lg btn-responsive">Get Started!</a>
+                <a href="#faq" type="button" class="btn btn-default btn-lg btn-responsive">Learn more about List Guru</a>
             </p>
         </div>
     </div>
@@ -83,56 +83,36 @@
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
             <div id="accordion">
-                <h3>Section 1</h3>
+                <h3>Is List Guru useful for my business?</h3>
                 <div>
-                    <p>
-                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                    <p>Of course :)</P>
+
+                    <p>List Guru works best for online companies that have a global customer base or audience. Our services can be used for traditional brick and mortar businesses as well but the results may vary a little.
                     </p>
                 </div>
-                <h3>Section 2</h3>
+                <h3>What kind of customers do you serve?</h3>
                 <div>
-                    <p>
-                        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                        suscipit faucibus urna.
-                    </p>
-                </div>
-                <h3>Section 3</h3>
-                <div>
-                    <p>
-                        "./themes/base/images/*",
-                        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                    </p>
+                    <p>Some of our current customers include:</p>
                     <ul>
-                        <li>List item one</li>
-                        <li>List item two</li>
-                        <li>List item three</li>
+                        <li>Online clothing shops</li>
+                        <li>Fitness brands</li>
+                        <li>Photographers</li>
+                        <li>Models</li>
+                        <li>Start-up companies</li>
+                        <li>Kickstarter Campaigns</li>
+                        <li>Marketing agencies</li>
+                        <li>And much, much more…</li>
                     </ul>
                 </div>
-                <h3>Section 4</h3>
+                <h3>How does your process work?</h3>
                 <div>
-                    <p>
-                        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                        mauris vel est.
-                    </p>
-                    <p>
-                        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                        inceptos himenaeos.
-                    </p>
+                    <p>We start by understanding your business and what your target audience/customer base is.</p>
+                    <p>From there we create a simple, yet effective landing page that will capture the emails of thousands of potential customers.</p>
+                    <p>Once we capture those emails we have a 3-5 email campaign that will sent to those customers on a predetermined schedule. Our email messaged are designed to peak the customer’s interest and drive them to your website.</p>
                 </div>
             </div>
 
-            <button type="button" class="btn btn-guru btn-lg btn-block btn-responsive">Get Started!</button>
+            <a href="#packages" type="button" class="btn btn-guru btn-lg btn-block btn-responsive">Get Started!</a>
         </div>
     </div>
 </div>
