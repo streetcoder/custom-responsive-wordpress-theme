@@ -16,12 +16,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#getstarted">Get Started</a></li>
-            <li><a href="#works">How it works</a></li>
-            <li><a href="#packages">Our Packages</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#projects">Past Projects</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="<?php bloginfo('url') ?>#getstarted" data-target="#getstarted">Get Started</a></li>
+            <li><a href="<?php bloginfo('url') ?>#works" data-target="#works">How it works</a></li>
+            <li><a href="<?php bloginfo('url') ?>#packages" data-target="#packages">Our Packages</a></li>
+            <li><a href="<?php bloginfo('url') ?>#faq" data-target="#faq">FAQ</a></li>
+            <li><a href="<?php bloginfo('url') ?>#projects" data-target="#projects">Past Projects</a></li>
+            <li><a href="<?php bloginfo('url') ?>#contact" data-target="#contact">Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

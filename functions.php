@@ -42,3 +42,9 @@ add_filter ('add_to_cart_redirect', 'redirect_to_checkout');
 function redirect_to_checkout() {
   return WC()->cart->get_checkout_url();
 }
+
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+function wcs_woo_remove_reviews_tab($tabs) {
+  unset($tabs['reviews']);
+  return $tabs;
+}

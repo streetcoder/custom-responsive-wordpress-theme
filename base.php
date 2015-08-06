@@ -43,7 +43,7 @@ use Roots\Sage\Wrapper;
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
-      get_template_part('templates/footer');
+      get_template_part('templates/footer-2');
       wp_footer();
     ?>
   </body>

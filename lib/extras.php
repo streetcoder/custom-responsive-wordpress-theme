@@ -40,9 +40,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 add_theme_support('woocommerce');
 
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
-//add_filter('woocommerce_show_page_title', '__return_false');
-//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
-add_filter( 'woocommerce_product_tabs', '__return_false' );
+
 
 /**
  * Changes the redirect URL for the Return To Shop button in the cart.
