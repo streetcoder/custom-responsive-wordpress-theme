@@ -16,7 +16,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<?php bloginfo('url') ?>#getstarted" data-target="#getstarted">Get Started</a></li>
+            <li><a href="<?php bloginfo('url') ?>/product/guru/">Get Started</a></li>
             <li><a href="<?php bloginfo('url') ?>#works" data-target="#works">How it works</a></li>
             <li><a href="<?php bloginfo('url') ?>#packages" data-target="#packages">Our Packages</a></li>
             <li><a href="<?php bloginfo('url') ?>#faq" data-target="#faq">FAQ</a></li>

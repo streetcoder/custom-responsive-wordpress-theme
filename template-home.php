@@ -21,8 +21,7 @@
             <h3 class="big-text-third">Grow your customers, relationships and sales with our email marketing campaigns.</h3>
 
             <p>
-                <a href="#packages" type="button" class="btn btn-guru btn-lg btn-responsive">Get Started!</a>
-                <a href="#faq" type="button" class="btn btn-default btn-lg btn-responsive">Learn more about List Guru</a>
+                <a href="#packages" type="button" class="btn btn-guru btn-lg">Get Started!</a>
             </p>
         </div>
     </div>
